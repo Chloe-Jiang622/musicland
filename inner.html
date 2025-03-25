@@ -9,55 +9,51 @@
 </head>
 
 <body>
-  <!-- 网站头部 -->
-  <header>
-    <h1>我的音乐小站</h1>
-  </header>
+  <!-- 背景图片设置，通过CSS设置 -->
 
-  <!-- 导航栏 -->
-  <nav>
-    <ul>
-      <li><a href="#music-works">音乐作品</a></li>
-      <li><a href="#production-process">制作过程</a></li>
-      <li><a href="#personal-intro">个人简介</a></li>
-    </ul>
-  </nav>
+  <!-- 侧边栏 -->
+  <aside class="sidebar">
+    <h1 class="sidebar-title">我的音乐小站</h1>
+    <nav>
+      <ul>
+        <li><a href="#music-works">音乐作品</a></li>
+        <li><a href="#production-process">制作过程</a></li>
+        <li><a href="#personal-intro">个人简介</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-  <!-- 音乐作品板块 -->
-  <section id="music-works">
-    <h2>音乐作品</h2>
-    <div class="video-upload">
-      <label for="video-upload-input">上传音乐视频</label>
-      <input type="file" id="video-upload-input">
-    </div>
-    <div class="video-display">
-      <!-- 上传后的视频将显示在这里 -->
-    </div>
-  </section>
+  <!-- 主内容区域 -->
+  <main>
+    <!-- 音乐作品板块 -->
+    <section id="music-works">
+      <h2>音乐作品</h2>
+      <div class="upload-section">
+        <label for="audio-upload-input">上传音频</label>
+        <input type="file" id="audio-upload-input" accept=".mp3,.wav,.midi">
+      </div>
+      <div class="audio-display">
+        <!-- 上传后的音频将显示在这里 -->
+      </div>
+      <div class="midi-section">
+        <h3>MIDI音频</h3>
+        <!-- 嵌入MIDI音频示例，这里假设midi文件在midi文件夹下，名为example.midi -->
+        <embed src="midi/example.midi" type="audio/midi" width="300" height="45">
+      </div>
+    </section>
 
-  <!-- 制作过程板块 -->
-  <section id="production-process">
-    <h2>制作过程</h2>
-    <p>这里可以详细描述音乐作品的制作过程，从灵感来源到最终成品。</p>
-  </section>
+    <!-- 制作过程板块 -->
+    <section id="production-process">
+      <h2>制作过程</h2>
+      <p>这里可以详细描述音乐作品的制作过程，从灵感来源到最终成品。</p>
+    </section>
 
-  <!-- 个人简介板块 -->
-  <section id="personal-intro">
-    <h2>个人简介</h2>
-    <div class="image-upload">
-      <label for="image-upload-input">上传个人照片</label>
-      <input type="file" id="image-upload-input">
-    </div>
-    <div class="image-display">
-      <!-- 上传后的图片将显示在这里 -->
-    </div>
-    <p>简单介绍一下自己，比如音乐风格偏好，音乐梦想等。</p>
-  </section>
-
-  <!-- 网站底部 -->
-  <footer>
-    <p>版权所有 &copy; 2025</p>
-  </footer>
+    <!-- 个人简介板块 -->
+    <section id="personal-intro">
+      <h2>个人简介</h2>
+      <p>简单介绍一下自己，比如音乐风格偏好，音乐梦想等。</p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
